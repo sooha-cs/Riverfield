@@ -14,4 +14,4 @@ Just a GNOME setup guide for Fedora! (because I'll probably need it later)
 Installation using package manager:
 
 Fedora:
-  --sudo dnf install yaru-theme
+      sudo dnf install yaru-theme
