@@ -53,3 +53,8 @@ Manual Installation:
 2.Use the Browse tab to search for extensions.
 3.Click Install to add new extensions.
 4.Manage installed extensions in the Installed tab. 
+
+ To download clock widget:
+ 1. Open Extension manager
+ 2. Go to "Explore" and search for "clock widgets"
+ 3. Download  
