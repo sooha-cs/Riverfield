@@ -57,4 +57,11 @@ Manual Installation:
  To download clock widget:
  1. Open Extension manager
  2. Go to "Explore" and search for "clock widgets"
- 3. Download  
+ 3. Download
+
+  To download the neofetch/fastfetch:
+  Neofetch is no longer available in the official Fedora repositories as of late 2024.
+
+  To install the modern alternative, run the following command in your terminal: (fedora 41+)
+
+    sudo dnf install fastfetch
