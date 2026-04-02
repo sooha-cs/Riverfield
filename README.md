@@ -1,7 +1,8 @@
 # Riverfield
 Just a GNOME setup guide for Fedora! (because I'll probably need it later)
 
---screenshot here
+<img width="1871" height="887" alt="fedora setup2" src="https://github.com/user-attachments/assets/af0568ea-b221-4047-bd69-f6dafe703817" />
+
 
 # Table of Contents
   bullet points
@@ -59,6 +60,10 @@ Manual Installation:
  2. Go to "Explore" and search for "clock widgets"
  3. Download
 
+To download the audio visualizer(cava):
+    
+    dnf install cava
+    
   To download the neofetch/fastfetch:
   Neofetch is no longer available in the official Fedora repositories as of late 2024.
 
