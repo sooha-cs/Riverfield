@@ -55,6 +55,8 @@ Manual Installation:
 3.Click Install to add new extensions.
 4.Manage installed extensions in the Installed tab. 
 
+Inable extensions like "Blur my shell" and more to customize it to your liking!
+
  To download clock widget:
  1. Open Extension manager
  2. Go to "Explore" and search for "clock widgets"
