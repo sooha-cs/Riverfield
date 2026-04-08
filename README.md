@@ -66,8 +66,8 @@ To download the audio visualizer(cava):
     
     dnf install cava
     
-  To download the neofetch/fastfetch:
-  Neofetch is no longer available in the official Fedora repositories as of late 2024.
+  Neofetch/fastfetch:
+  (Neofetch is no longer available in the official Fedora repositories as of late 2024.)
 
   To install the modern alternative, run the following command in your terminal: (fedora 41+)
 
