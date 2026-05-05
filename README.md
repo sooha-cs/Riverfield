@@ -72,3 +72,6 @@ To download the audio visualizer(cava):
   To install the modern alternative, run the following command in your terminal: (fedora 41+)
 
     sudo dnf install fastfetch
+
+
+have to add about gnome extensions, gnome extension manager and more
