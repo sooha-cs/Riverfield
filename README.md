@@ -1,7 +1,7 @@
 # Riverfield
 Just a GNOME setup guide for Fedora! (because I'll probably need it later)
 
-<img width="1871" height="887" alt="fedora setup2" src="https://github.com/user-attachments/assets/af0568ea-b221-4047-bd69-f6dafe703817" />
+<img width="1871" height="887" alt="fedora setup2" src="https://github.com/user-attachments/assets/" />
 
 
 # Table of Contents
