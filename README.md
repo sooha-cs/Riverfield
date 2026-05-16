@@ -1,6 +1,6 @@
 <div align="center">
 
-# Riverfield 🌊
+# Riverfield ⋆｡˚🪼🫧˚｡⋆
 
 A personal GNOME setup guide for Fedora. Clean, functional, and easy to replicate.
 
@@ -42,13 +42,13 @@ A personal GNOME setup guide for Fedora. Clean, functional, and easy to replicat
 
 ## Introduction
 
-This is my personal GNOME setup on Fedora; probably documented so I can rebuild it after inevitably breaking something. :D
+This is my personal GNOME setup on Fedora; probably documented so I can rebuild it after inevitably breaking something :D
 
 Riverfield is not a heavy transformation. It keeps the GNOME workflow intact while fixing the things that feel rough out of the box: fonts, blur, the dock, the launcher, a few widgets on the desktop. Everything has a reason to be here.
 
 **New to Linux or GNOME?** If you can copy and paste a terminal command, you can follow this guide. Each step is explained and the screenshots show you exactly what settings to use.
 
-You can get the full setup running in about **1–2 hours**, or just take the parts you want — every section works on its own.
+You can get the full setup running in about **1–2 hours**, or just take the parts you want since every section works on its own.
 
 > **Built for Fedora Workstation with GNOME on Wayland.**
 
@@ -74,7 +74,7 @@ A few things worth knowing before you begin.
 
 ---
 
-## Preview
+## Preview 
 
 ![Desktop Clean](Assets/desktop.png)
 
@@ -82,7 +82,7 @@ A few things worth knowing before you begin.
 
 ![Workflow](Assets/workflow.png)
 
-![Multitasking](Assets/multitasking.png)
+![Preview](Assets/preview.png)
 
 ---
 
@@ -221,111 +221,98 @@ Install only what fits your workflow.
 - [**Yaru Automatic Dark Mode**](https://extensions.gnome.org/extension/8655/yaru-automatic-dark-mode/) — Automatically switches between Yaru light and dark based on system setting.
 
 ---
-
 ### Extension Configurations
-
+ 
 > If a setting isn't mentioned here, I left it at the default.
-
+ 
 <details>
 <summary><b>Blur My Shell</b></summary>
-
 Go to **Blur My Shell settings → Pipelines** and make sure the default pipeline is enabled — it is disabled out of the box, which is the most common reason blur doesn't work.
-
+ 
 Key settings to change from defaults:
-
+ 
 - **Panel** — Enable blur on the top panel
 - **Overview** — Enable blur in the activities overview
 - **Dash** — Enable blur on the dash / dock
 - **Applications** — Enable the application pipeline if you want blur behind apps like Zen Browser
-
 </details>
-
 <details>
 <summary><b>Dash to Dock</b></summary>
-
 - **Position:** Bottom, centered
 - **Intelligent autohide:** On (hides when a window overlaps)
 - **Panel mode:** Off (floating dock, not full width)
 - **Icon size:** 40–48 px depending on your screen
 - **Appearance:** Match the system theme, enable background blur
-
 </details>
-
 <details>
 <summary><b>Just Perfection</b></summary>
-
 Useful things to tweak here:
-
+ 
 - Hide the **Activities button** if you don't use it
 - Adjust **workspace switcher size** in the overview
 - Set **animation speed** (50–75% is noticeably snappier)
 - Hide the **window picker close button** for a cleaner look
-
 </details>
-
 <details>
 <summary><b>User Themes</b></summary>
-
 Once installed and enabled, go to **GNOME Tweaks → Appearance → Shell** and you will now see the Shell dropdown. Select `Yaru-Dark`.
-
+ 
 </details>
-
 <details>
 <summary><b>AppIndicator Support</b></summary>
-
 No configuration needed. Install and enable it — system tray icons will appear in the top bar automatically.
-
+ 
 </details>
-
 ---
-
+ 
 ## Setup Guide
-
+ 
 Step-by-step walkthrough from a fresh Fedora install.
-
+ 
 **1. Update the system**
-
+ 
 ```bash
 sudo dnf upgrade --refresh
 ```
-
+ 
 **2. Install GNOME Tweaks and Extension Manager**
-
+ 
 ```bash
 sudo dnf install gnome-tweaks
 flatpak install flathub com.mattjakeman.ExtensionManager
 ```
-
+ 
 **3. Install Yaru theme**
-
+ 
 ```bash
 sudo dnf install yaru-theme
 ```
-
+ 
 **4. Install the Ubuntu font**
-
+ 
 Download from [fonts.google.com/specimen/Ubuntu](https://fonts.google.com/specimen/Ubuntu), extract, and install via Font Viewer.
-
+ 
 **5. Apply theme and fonts**
-
+ 
 Open GNOME Tweaks and set the icon theme, shell theme, and fonts as described in the [Appearance](#appearance) section.
-
+ 
 **6. Install extensions**
-
+ 
 Open Extension Manager and install everything in [Must Have](#must-have), then any [Optional](#optional) ones you want. Configure each using the screenshots in [Extension Configurations](#extension-configurations).
-
+ 
 **7. Set your wallpaper**
-
+ 
 Right-click the desktop → Change Background, or use the terminal method in [Wallpaper](#wallpaper).
-
+ 
 **8. Install applications and widgets**
-
+ 
 Follow the [Applications & Widgets](#applications--widgets) section below.
-
+ 
 > [!NOTE]
 > If GNOME Shell seems unresponsive after installing extensions, press `Alt + F2`, type `r`, and press Enter to restart the shell. On Wayland, log out and back in instead.
-
+ 
 ---
+ 
 
 ## Applications & Widgets
 
@@ -374,6 +361,29 @@ cava
 ```
 
 **Tip:** Open a Ptyxis terminal, run `cava`, and position it on your desktop for a live visualizer effect as seen in the preview screenshots.
+
+---
+
+### Pipes.sh
+
+A terminal screensaver that draws animated pipes across the screen. Looks great running in a floating terminal on the desktop.
+
+🔗 [github.com/pipeseroni/pipes.sh](https://github.com/pipeseroni/pipes.sh)
+
+**Installation:**
+
+```bash
+sudo dnf install pipes-sh
+```
+
+**Run it:**
+
+```bash
+pipes.sh
+```
+
+> [!TIP]
+> Press `r` to reset the screen, `p` to pause, and `q` to quit. You can also tweak the speed and style with flags — run `pipes.sh --help` to see all options.
 
 ---
 
@@ -455,6 +465,11 @@ cmatrix
 
 ---
 
+![Multitasking](Assets/multitasking.png)
+
+---
+
+
 ## Troubleshooting
 
 > [!NOTE]
@@ -533,6 +548,7 @@ This setup was built and tested on:
 │   ├── desktop.png
 │   ├── overview.png
 │   ├── multitasking.png
+|    ├── preview.png
 │   └── workflow.png
 └── README.md
 ```
