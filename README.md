@@ -543,7 +543,7 @@ This setup was built and tested on:
 ├── Assets/
 │   ├── desktop.png
 │   ├── overview.png
-│   ├── multitasking.png
+│   ├── preview.png
 │   └── workflow.png
 └── README.md
 ```
