@@ -263,8 +263,8 @@ Once installed and enabled, go to **GNOME Tweaks → Appearance → Shell** and 
 No configuration needed. Install and enable it — system tray icons will appear in the top bar automatically.
  
 </details>
+
 ---
- 
 ## Setup Guide
  
 Step-by-step walkthrough from a fresh Fedora install.
@@ -465,10 +465,6 @@ cmatrix
 
 ---
 
-![Multitasking](Assets/multitasking.png)
-
----
-
 
 ## Troubleshooting
 
@@ -548,7 +544,6 @@ This setup was built and tested on:
 │   ├── desktop.png
 │   ├── overview.png
 │   ├── multitasking.png
-|    ├── preview.png
 │   └── workflow.png
 └── README.md
 ```
